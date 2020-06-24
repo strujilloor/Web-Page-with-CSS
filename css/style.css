@@ -1,4 +1,47 @@
-* {
-  margin: 0px;
-  padding: 0px;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  /* separeting sections */
+  padding: 60px 0px;
+
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Header */
+/* https://uigradients.com/ */
+
+header {
+  width: 100%;
+  height: 600px;
+
+  /* imagen de fondo con efecto de filtro */
+  background: #ff0099;
+  background: -webkit-linear-gradient(to right, #493240c9, #ff0099c9),
+    url(../img/portada.jpg); /* agregamos aquí la imagen */
+  background: linear-gradient(to right, #493240c9, #ff0099c9),
+    url(../img/portada.jpg); /* agregamos aquí la imagen */
+
+  /* background-size: especifica el tamaño de las imágenes de fondo. */
+  /* cover: Cambia el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar la imagen o cortar un poco uno de los bordes */
+  background-size: cover;
+
+  /* background-attachment : establece si una imagen de fondo se desplaza con el resto de la página o si es fija. */
+  /* fixed: la imagen de fondo que no se desplazará con la página */
+  background-attachment: fixed;
+
+  /* Mover el elem según su posición normal */
+  position: relative;
+  /* Note: a diferencia de absolute que opsiciona desde la posición de su contenedor. https://www.w3schools.com/css/css_positioning.asp */
 }
