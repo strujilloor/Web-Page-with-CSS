@@ -60,3 +60,10 @@ nav > a {
 nav > a:hover {
   text-decoration: underline;
 }
+
+.wave {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* Note no olvides, cambiarle el color desde el html */
+}
