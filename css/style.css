@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  /* separeting sections */
+  /* separating sections */
   padding: 60px 0px;
 
   width: 90%;
@@ -43,5 +43,20 @@ header {
 
   /* Mover el elem según su posición normal */
   position: relative;
-  /* Note: a diferencia de absolute que opsiciona desde la posición de su contenedor. https://www.w3schools.com/css/css_positioning.asp */
+  /* Note: a diferencia de absolute que posiciona desde la posición de su contenedor. https://www.w3schools.com/css/css_positioning.asp */
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0px 0px;
+}
+
+nav > a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+nav > a:hover {
+  text-decoration: underline;
 }
