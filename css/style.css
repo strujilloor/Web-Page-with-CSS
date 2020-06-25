@@ -34,7 +34,7 @@ header {
     url(../img/portada.jpg); /* agregamos aquí la imagen */
 
   /* background-size: especifica el tamaño de las imágenes de fondo. */
-  /* cover: Cambia el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar la imagen o cortar un poco uno de los bordes */
+  /* cover: Cambia el tamaño de la imagen de fondo (REAJUSTA) para CUBRIR todo el contenedor, incluso si tiene que estirar la imagen o cortar un poco uno de los bordes */
   background-size: cover;
 
   /* background-attachment : establece si una imagen de fondo se desplaza con el resto de la página o si es fija. */
@@ -127,4 +127,70 @@ header .header-texts {
   padding: 0px 0px 30px 15px;
   font-weight: 300;
   text-align: justify;
+}
+
+/* Gallery */
+
+.portafolio {
+  background-color: #f2f2f2;
+}
+
+.portafolio-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.portafolio-image {
+  width: 24%;
+  /* height: 180px; */
+  margin-bottom: 10px;
+
+  overflow: hidden; /* para escongder el icono*/
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.portafolio-image > img {
+  /* debo definir que la img tenga el mismo tamaño que su contenedor */
+  width: 100%;
+  height: 100%;
+  /* se utiliza para especificar cómo se debe cambiar el tamaño de un <img> o <video> para que se ajuste a su contenedor. */
+  /* Si usamos object-fit: cover; cortará los lados de la imagen, preservará la relación de aspecto y también rellenará el espacio */
+  object-fit: cover;
+  /* Note: object-fit es para imagenes, y background-size es para fondos de imagenes  */
+  display: block; /* para mandar el icono y el texto abajo */
+}
+
+/* Vamos a hacer la animación: */
+
+.gallery-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* Lo esconde */
+  transform: scale(0);
+  background: hsla(273, 91%, 27%, 0.7);
+  transition: transform 0.5s;
+  /* Centrar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-hover > img {
+  width: 50px;
+}
+
+.gallery-hover > p {
+  color: white;
+}
+
+/* Cuando .portafolio-image sea hover, .gallery-hover tenga estos estilos */
+.portafolio-image:hover .gallery-hover {
+  /* lo agranda */
+  transform: scale(1);
 }
