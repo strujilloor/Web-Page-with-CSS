@@ -194,3 +194,40 @@ header .header-texts {
   /* lo agranda */
   transform: scale(1);
 }
+
+/* Clients */
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards .card {
+  background: #4d0686;
+  width: 46%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  object-fit: cover;
+  display: block;
+}
+
+.cards .card .content-text-card {
+  width: 60%;
+  color: white;
+}
+
+.cards .card .content-text-card > p {
+  font-weight: 300;
+}
