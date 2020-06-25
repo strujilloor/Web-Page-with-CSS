@@ -231,3 +231,35 @@ header .header-texts {
 .cards .card .content-text-card > p {
   font-weight: 300;
 }
+
+/* Our Services */
+
+.about-services {
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+
+.service-content {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.service-ind {
+  flex-basis: 28%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-ind img {
+  width: 90%;
+  height: 200px;
+}
+
+.service-ind p {
+  font-weight: 300;
+  text-align: justify;
+}
