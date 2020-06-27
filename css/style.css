@@ -4,19 +4,19 @@ body {
 
 .container {
   /* separating sections */
-  padding: 60px 0px;
+  padding: 3.75rem 0px;
 
   width: 90%;
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: auto;
   overflow: hidden;
 }
 
 .title {
   color: #642a73;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 /* Header */
@@ -24,7 +24,7 @@ body {
 
 header {
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
 
   /* imagen de fondo con efecto de filtro */
   background: #ff0099;
@@ -48,7 +48,7 @@ header {
 
 nav {
   text-align: right;
-  padding: 30px 50px 0px 0px;
+  padding: 1.875rem 3.125rem 0px 0px;
 }
 
 /* > hijo directo */
@@ -56,7 +56,7 @@ nav > a {
   color: white;
   font-weight: 300;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 nav > a:hover {
   text-decoration: underline;
@@ -64,7 +64,7 @@ nav > a:hover {
 
 header .header-texts {
   width: 100%;
-  height: 430px;
+  height: 26.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,11 +75,11 @@ header .header-texts {
 /* puede ser hijo, nieto, lo que sea mientras este dentro de header-texts  */
 .header-texts h1 {
   color: white;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 .header-texts h2 {
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 300;
 }
 
@@ -110,7 +110,7 @@ main .about-us {
 }
 
 .content-texts h3 {
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .content-texts h3 span {
@@ -119,16 +119,16 @@ main .about-us {
   border-radius: 50%; /* para que sea redondo */
   display: inline-block;
   text-align: center;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
   /* padding: 4px; */
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-  margin-right: 5px;
+  box-shadow: 0px 0px 0.375rem 0px rgba(0, 0, 0, 0.5);
+  margin-right: 0.313rem;
 }
 
 .content-texts p {
-  padding: 0px 0px 30px 15px;
+  padding: 0px 0px 1.875rem 0.938rem;
   font-weight: 300;
   text-align: justify;
 }
@@ -148,12 +148,12 @@ main .about-us {
 .portafolio-image {
   width: 24%;
   /* height: 180px; */
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 
   overflow: hidden; /* para escongder el icono*/
   position: relative;
   cursor: pointer;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0.375rem 0px rgba(0, 0, 0, 0.5);
 }
 
 .portafolio-image > img {
@@ -186,7 +186,7 @@ main .about-us {
 }
 
 .gallery-hover > img {
-  width: 50px;
+  width: 3.125rem;
 }
 
 .gallery-hover > p {
@@ -210,19 +210,19 @@ main .about-us {
 .cards .card {
   background: #4d0686;
   width: 46%;
-  height: 200px;
+  height: 12.5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 5px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.375rem 0px rgba(0, 0, 0, 0.6);
 }
 
 .cards .card img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 0.188rem solid white;
 
   object-fit: cover;
   display: block;
@@ -241,7 +241,7 @@ main .about-us {
 
 .about-services {
   background: #f2f2f2;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .service-content {
@@ -261,7 +261,7 @@ main .about-us {
 
 .service-ind img {
   width: 90%;
-  height: 200px;
+  height: 12.5rem;
 }
 
 .service-ind p {
@@ -273,7 +273,7 @@ main .about-us {
 
 footer {
   background-color: #414141;
-  padding: 60px 0px 30px 0px;
+  padding: 3.75rem 0px 1.875rem 0px;
   overflow: hidden;
 }
 
@@ -284,7 +284,7 @@ footer {
   justify-content: space-evenly;
 
   border-bottom: 1px solid #ccc;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 .footer-content {
@@ -293,8 +293,8 @@ footer {
 
 .footer-content h4 {
   color: white;
-  padding-bottom: 7px;
-  border-bottom: 3px solid #af20d3;
+  padding-bottom: 0.438rem;
+  border-bottom: 0.188rem solid #af20d3;
 }
 .footer-content p {
   color: #ccc;
@@ -303,8 +303,8 @@ footer {
 footer h2 {
   text-align: center;
   color: #9e9797;
-  font-size: 24px;
-  padding: 0px 10px;
+  font-size: 1.5rem;
+  padding: 0px 0.625rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -325,7 +325,7 @@ footer h2 {
 
   .about-us .content-texts {
     width: 90%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   /* PORTAFOLIO GALLERY */
@@ -344,7 +344,7 @@ footer h2 {
     width: 90%;
   }
   .cards .card:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   /* About Services */
@@ -355,26 +355,26 @@ footer h2 {
 
 @media screen and (max-width: 575px) {
   .container {
-    padding: 30px 0px;
+    padding: 1.875rem 0px;
   }
   /* HEADER */
   nav {
     text-align: center;
-    padding: 30px 0px 0px 0px;
+    padding: 1.875rem 0px 0px 0px;
   }
 
   nav > a {
-    margin-right: 5px;
+    margin-right: 0.313rem;
   }
 
   header .header-texts h1 {
-    font-size: 35px;
-    padding: 10px;
+    font-size: 2.188rem;
+    padding: 0.625rem;
   }
 
   header .header-texts h2 {
-    font-size: 25px;
-    padding: 10px;
+    font-size: 1.563rem;
+    padding: 0.625rem;
   }
 
   /* ABOUT US */
@@ -394,14 +394,14 @@ footer h2 {
   /* Clients */
   .cards .card {
     flex-direction: column;
-    height: 450px;
+    height: 28.125rem;
     width: 95%;
-    /* padding: 20px 0px; */
+    /* padding: 1.25rem 0px; */
   }
 
   .cards .card img {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
   }
 
   /* Footer} */
@@ -419,6 +419,6 @@ footer h2 {
   }
 
   .final-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
