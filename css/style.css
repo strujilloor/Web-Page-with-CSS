@@ -263,3 +263,40 @@ header .header-texts {
   font-weight: 300;
   text-align: justify;
 }
+
+/* Footer */
+
+footer {
+  background-color: #414141;
+  padding: 60px 0px 30px 0px;
+  overflow: hidden;
+}
+
+.container-footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h4 {
+  color: white;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #af20d3;
+}
+.footer-content p {
+  color: #ccc;
+}
+
+footer h2 {
+  text-align: center;
+  color: #9e9797;
+  font-size: 24px;
+}
