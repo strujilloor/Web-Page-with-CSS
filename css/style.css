@@ -28,9 +28,9 @@ header {
 
   /* imagen de fondo con efecto de filtro */
   background: #ff0099;
-  background: -webkit-linear-gradient(to right, #493240c9, #ff0099c9),
+  background: -webkit-linear-gradient(to right, #ff0099a9, #493240a9),
     url(../img/portada.jpg); /* agregamos aquí la imagen */
-  background: linear-gradient(to right, #493240c9, #ff0099c9),
+  background: linear-gradient(to right, #ff0099a9, #493240a9),
     url(../img/portada.jpg); /* agregamos aquí la imagen */
 
   /* background-size: especifica el tamaño de las imágenes de fondo. */
@@ -91,6 +91,10 @@ header .header-texts {
 }
 
 /* About Us */
+
+main .about-us {
+  padding-top: 0px;
+}
 
 .container-about-us {
   display: flex;
@@ -187,6 +191,7 @@ header .header-texts {
 
 .gallery-hover > p {
   color: white;
+  margin-bottom: 0px; /* para que quede perfectamente centrado */
 }
 
 /* Cuando .portafolio-image sea hover, .gallery-hover tenga estos estilos */
@@ -299,4 +304,121 @@ footer h2 {
   text-align: center;
   color: #9e9797;
   font-size: 24px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  header {
+    background-position: center;
+  }
+  /* ABOUT US */
+  .container-about-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-about-us {
+    width: 90%;
+  }
+
+  .about-us .content-texts {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  /* PORTAFOLIO GALLERY */
+  .portafolio-image {
+    width: 44%;
+  }
+
+  /* Clients */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards .card {
+    width: 90%;
+  }
+  .cards .card:first-child {
+    margin-bottom: 20px;
+  }
+
+  /* About Services */
+  .service-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 30px 0px;
+  }
+  /* HEADER */
+  nav {
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+  }
+
+  nav > a {
+    margin-right: 5px;
+  }
+
+  header .header-texts h1 {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  header .header-texts h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  /* ABOUT US */
+  .image-about-us {
+    width: 86%;
+  }
+
+  .about-us .content-texts {
+    width: 95%;
+  }
+
+  /* Portafolio Gallery */
+  .portafolio-image {
+    width: 95%;
+  }
+
+  /* Clients */
+  .cards .card {
+    flex-direction: column;
+    height: 450px;
+    width: 95%;
+    /* padding: 20px 0px; */
+  }
+
+  .cards .card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Footer} */
+  .container-footer {
+    flex-direction: column;
+    border: none;
+  }
+
+  .footer-content h4 {
+    border: none;
+  }
+
+  .footer-content {
+    border-bottom: 1px solid white;
+  }
+
+  .final-title {
+    font-size: 20px;
+  }
 }
